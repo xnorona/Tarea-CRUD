@@ -1,0 +1,151 @@
+/* Reset básico y tipografía */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Enlaces como botones */
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botón principal "Nuevo Producto" */
+body > a:first-of-type {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+body > a:first-of-type:hover {
+    background-color: #27ae60;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    font-weight: normal;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Acciones en la tabla */
+td a {
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+td a[href*="delete"] {
+    color: #e74c3c;
+}
+
+td a[href*="edit"] {
+    color: #f39c12;
+}
+
+/* Formularios */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Mensajes de error */
+div[style="color: red;"] {
+    background-color: #fce4e4;
+    border: 1px solid #fcc2c3;
+    color: #cc0033 !important;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
